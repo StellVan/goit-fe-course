@@ -1,0 +1,30 @@
+html {
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+h2, p {
+    margin: 0;
+}
+.container {
+    width: 901px;
+    margin: 0 auto;
+}
+body {
+    background-image: url("../img/7.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+article > div {
+    display: inline-block;
+}
