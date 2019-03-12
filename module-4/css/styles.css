@@ -1,0 +1,186 @@
+html {
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.image{
+    width: 255px;
+    object-fit: cover;
+    height: 282px;
+}
+.images{
+    width: 350px;
+    height: 260px;
+}
+h2, h3, p, ul{
+    margin: 0;
+    padding: 0; 
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.logo{
+    display: block;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.067;
+    float: left;
+    margin-top: 10px;
+}
+.logo::first-letter{
+    font-weight: bold;
+    color: rgb(26, 188, 156);
+}
+.elements{
+    float: right;
+    margin-top: 14px;
+    margin-bottom: 138px;
+}
+.elements > li{
+    display: inline-block;
+    margin-left: 25px;
+}
+.element:hover a{
+    color: rgb(26, 188, 156); 
+}
+.element a{
+    font-size: 14px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 0.786;
+    color: black;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.name{
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+    text-align: center;
+}
+.name::after{
+    display: block;
+    content: '';
+    opacity: 0;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 92px;
+}
+.name:hover::after{
+    opacity: 1;
+}
+.box{
+    float: left;
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.box:nth-of-type(4n+4){
+    margin-right: 0;
+}
+.item a{
+    padding-top: 3px;
+    text-indent: 14px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(50, 50, 50);
+    width: 200px;
+    height: 40px;
+    float: left;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.778;
+}
+.price{
+    padding-top: 3px;
+    text-align: center;
+    display: block;
+    background-color: rgb(140, 140, 140);
+    width: 55px;
+    height: 40px;
+    float: right;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.778;
+}
+.box:hover .buylink {
+    background-color: rgb(26, 188, 156);
+}
+.box:hover .price {
+    background-color: rgb(127, 217, 199);
+}
+.store{
+    margin-bottom: 105px;
+}
+.readbox{
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+}
+.readbox:nth-of-type(3){
+    margin-right: 0;
+}
+.readname{
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: rgb(85, 82, 82);
+    line-height: 1.444;
+}
+.readname::after{
+    display: block;
+    width: 136px;
+    height: 3px;
+    content: '';
+    opacity: 0;
+    background-color: rgb(26, 188, 156);
+}
+.readname:hover::after{
+    opacity: 1;
+}
+.text{
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: rgb(85, 82, 82);
+    line-height: 1.857;
+}
+.button {
+    text-align: center;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.625;
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+    width: 160px;
+    margin-top: 11px;
+}
+.button:hover{
+    color: rgb(155, 153, 153);
+    background-color: rgb(23, 61, 53);
+}
