@@ -28,24 +28,26 @@ h2, h3, p, ul{
     max-width: 1110px;
     margin: 0 auto;
 }
-.logo{
+.logo a{
     display: block;
+    text-decoration: none;
+    color: #0f0101;
     font-size: 30px;
     font-family: "Roboto";
     font-weight: normal;
     text-transform: uppercase;
     line-height: 1.067;
     float: left;
-    margin-top: 10px;
+    padding-top: 35px;
 }
-.logo::first-letter{
+.logo a::first-letter{
     font-weight: bold;
     color: rgb(26, 188, 156);
 }
 .elements{
     float: right;
-    margin-top: 14px;
-    margin-bottom: 138px;
+    padding-top: 40px;
+    margin-bottom: 109px;
 }
 .elements > li{
     display: inline-block;
@@ -55,6 +57,7 @@ h2, h3, p, ul{
     color: rgb(26, 188, 156); 
 }
 .element a{
+    display: block;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -68,7 +71,7 @@ h2, h3, p, ul{
     display: table;
     clear: both;
 }
-.name{
+.name1, .name2{
     font-size: 48px;
     font-family: "Roboto";
     color: rgb(81, 81, 81);
@@ -76,7 +79,7 @@ h2, h3, p, ul{
     line-height: 0.667;
     text-align: center;
 }
-.name::after{
+.name1::after{
     display: block;
     content: '';
     opacity: 0;
@@ -87,7 +90,21 @@ h2, h3, p, ul{
     margin-top: 32px;
     margin-bottom: 92px;
 }
-.name:hover::after{
+.name1:hover::after{
+    opacity: 1;
+}
+.name2::after{
+    display: block;
+    content: '';
+    opacity: 0;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+.name2:hover::after{
     opacity: 1;
 }
 .box{
@@ -98,6 +115,9 @@ h2, h3, p, ul{
 }
 .box:nth-of-type(4n+4){
     margin-right: 0;
+}
+.box:nth-of-type(n+5){
+    margin-bottom: 110px;
 }
 .item a{
     padding-top: 3px;
@@ -147,6 +167,9 @@ h2, h3, p, ul{
 .readbox:nth-of-type(3){
     margin-right: 0;
 }
+.img{
+    margin-bottom: -16px;
+}
 .readname{
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -160,6 +183,7 @@ h2, h3, p, ul{
     content: '';
     opacity: 0;
     background-color: rgb(26, 188, 156);
+    margin-top: 10px;
 }
 .readname:hover::after{
     opacity: 1;
@@ -169,6 +193,7 @@ h2, h3, p, ul{
     font-family: 'Open Sans', sans-serif;
     color: rgb(85, 82, 82);
     line-height: 1.857;
+    margin-bottom: 12px;
 }
 .button {
     text-align: center;
@@ -180,7 +205,6 @@ h2, h3, p, ul{
     background-color: rgb(78, 198, 171);
     height: 51px;
     width: 160px;
-    margin-top: 11px;
 }
 .button:hover{
     color: rgb(155, 153, 153);
