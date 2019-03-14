@@ -38,9 +38,17 @@ h2, p {
 .component:hover a{
     color: rgb(16, 168, 238);
 }
-.component{
+.list > li{
+    display: inline-block; 
+    margin: 0;
+}
+.component a{
     display: block;
     margin-right: 60px;
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1.714;
 }
 .component:last-child{
     margin-right: 0px;
@@ -52,9 +60,6 @@ h2, p {
 .list{
     margin: 0;
     padding: 0;
-}
-.list > li{
-    display: inline-block;
 }
 .nav {
     width: 901px;
