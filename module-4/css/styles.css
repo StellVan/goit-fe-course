@@ -135,7 +135,6 @@ h2, h3, p, ul{
     display: inline-block;
 }
 .item_price{
-    display: inline-block;
     font-size: 0;
 }
 .item{

@@ -1,0 +1,213 @@
+html {
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+img {
+    display: block;
+}
+
+h2, h3, h4, p, ul, input, button{
+    margin: 0;
+    padding: 0; 
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.logo a, .element a{
+    text-decoration: none;
+}
+.elements{
+    list-style-type: none;
+    width: 490px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(26, 188, 156);
+    font-weight: bold;
+    line-height: 1.2;
+}
+.element{
+    padding-top: 15px;
+}
+.element a{
+    font-size: 14px;    
+    font-family: "Montserrat", sans-serif;
+    color: rgb(26, 188, 156);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.element::after {
+    content: "";
+    display: block;
+    background-color: rgb(243, 129, 129);
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    margin-top: 10px;
+}
+.element:hover::after {
+    opacity: 1;
+}
+.element:hover a{
+    color: rgb(243, 129, 129);
+}
+
+/* header */
+.sign_block{
+    margin: o auto;
+    text-align: center;
+}
+.cursive{
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.heading {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.heading::after {
+    content: "";
+    display: block;
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 0;
+    margin-bottom: 74px;
+}
+.icon_main{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.icon{
+    height: 32px;
+}
+.text_box{
+    width: 272px;
+}
+.icon_box{
+    width: 336px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 105px;
+}
+.icon_box:nth-of-type(n+4){
+    margin-bottom: 92px;
+}
+.icon_sign{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+.icon_text{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+.text_second{
+    text-align: center;
+    width: 980px;
+    margin: 0 auto;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.team_image{
+    width: 380px;
+    height: 470px;
+}
+.list_item{
+    text-align: center;
+}
+.name, .profession{
+    display: block;
+}
+.name {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.profession {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+}
+.footer_box{
+    border-top: 1px solid;
+    border-top-color: rgb(140, 143, 146);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}    
+.footer_box a{
+    text-decoration: none;
+}
+.footer_paragraph{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+.Laqiq{
+    color: rgb(243, 129, 129);
+}
+.input{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
+    width: 234px;
+    height: 44px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+}
+.sub{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 225, 211);
+    width: 150px;
+    height: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border: 0;
+}
