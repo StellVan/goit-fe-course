@@ -42,6 +42,7 @@ h2, h3, h4, p, ul, input, button{
     color: rgb(26, 188, 156);
     font-weight: bold;
     line-height: 1.2;
+    display: block;
 }
 .element{
     padding-top: 15px;
@@ -52,6 +53,8 @@ h2, h3, h4, p, ul, input, button{
     color: rgb(26, 188, 156);
     text-transform: uppercase;
     line-height: 1.2;
+    transition: color .2s linear;
+    display: block;
 }
 .element::after {
     content: "";
@@ -65,7 +68,7 @@ h2, h3, h4, p, ul, input, button{
 .element:hover::after {
     opacity: 1;
 }
-.element:hover a{
+.element a:hover{
     color: rgb(243, 129, 129);
 }
 
