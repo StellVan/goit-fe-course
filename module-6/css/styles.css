@@ -197,16 +197,16 @@ h2, h3, h4, p, ul, input, button{
     background-color: rgb(149, 225, 211);
     transition: 0.2s;
 }
-.Facebook{
+.facebook{
     background: url(../img/10.png) no-repeat center #fce38a;
 }
-.Twitter{
+.twitter{
     background: url(../img/9.png) no-repeat center #fce38a;
 }
-.Pinterest{
+.pinterest{
     background: url(../img/8.png) no-repeat center #fce38a;
 }
-.Instagram{
+.instagram{
     background: url(../img/7.png) no-repeat center #fce38a;
 }
 .team_image{
