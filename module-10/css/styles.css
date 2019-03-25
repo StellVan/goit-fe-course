@@ -156,7 +156,7 @@ url('../fonts/roboto-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firef
 }
 .elements{
     list-style-type: none;
-    width: 490px;
+    width: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -167,6 +167,15 @@ url('../fonts/roboto-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firef
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+.nav_icon{
+    padding-top: 13px;
+}
+.nav_icon svg{
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
 .logo a{
     font-size: 30px;
