@@ -2,24 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Homework 6</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework-10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <header class="header container">
-        <h2 class="logo"><a href="#">MoGo</a></h2>
-        <nav class="navigation">
-            <ul class="elements">
-                <li class="element"><a href="#">about</a></li>
-                <li class="element"><a href="#">service</a></li>
-                <li class="element"><a href="#">work</a></li>
-                <li class="element"><a href="#">blog</a></li>
-                <li class="element"><a href="#">contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
+    <div class="header_wrapper">
+            <header class="header container">
+                <div class="nav_box">
+                    <h2 class="logo"><a href="#">MoGo</a></h2>
+                    <nav class="navigation">
+                        <ul class="elements">
+                            <li class="element"><a href="#">about</a></li>
+                            <li class="element"><a href="#">service</a></li>
+                            <li class="element"><a href="#">work</a></li>
+                            <li class="element"><a href="#">blog</a></li>
+                            <li class="element"><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main_heading">
+                    <span class="main_sign">Creative Template</span>
+                    <span class="main_header">Welcome<br>to MoGo</span>
+                    <button class="header_button">Learn more</button>
+                </div>
+            </header>
+    </div>
+    <main class="main container">
         <section class="first_section">
             <div class="sign_block">
                 <h3 class="cursive">We work with</h3>
@@ -27,42 +39,54 @@
             </div>
             <ul class="icon_main">
                 <li class="icon_box">
-                    <img class="icon" src="../img/1.png" alt="">
+                    <svg class="icon">
+                        <use xlink:href="./img/icons/sprite.svg#alarm-clock"></use>
+                    </svg>
                     <div class="text_box">
                         <span class="icon_sign">Photography</span>
                         <p class="icon_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div> 
                 </li>
                 <li class="icon_box">
-                    <img class="icon" src="../img/6.png" alt="">
+                    <svg class="icon">
+                        <use xlink:href="./img/icons/sprite.svg#ascendant-bars-graphic"></use>
+                    </svg>
                     <div class="text_box">
                         <span class="icon_sign">Web Design</span>
                         <p class="icon_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                 </li>
                 <li class="icon_box">
-                    <img class="icon" src="../img/3.png" alt="">
+                    <svg class="icon">
+                        <use xlink:href="./img/icons/sprite.svg#digital-marketing"></use>
+                    </svg>
                     <div class="text_box">
                         <span class="icon_sign">Creativity</span>
                         <p class="icon_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                 </li>
                 <li class="icon_box">
-                    <img class="icon" src="../img/2.png" alt="">
+                    <svg class="icon">
+                        <use xlink:href="./img/icons/sprite.svg#house-outline"></use>
+                    </svg>
                     <div class="text_box">
                         <span class="icon_sign">seo</span>
                         <p class="icon_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                 </li>
                 <li class="icon_box">
-                    <img class="icon" src="../img/4.png" alt="">
+                    <svg class="icon">
+                        <use xlink:href="./img/icons/sprite.svg#monitor"></use>
+                    </svg>
                     <div class="text_box">
                         <span class="icon_sign">Css/Html</span>
                         <p class="icon_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                 </li>
                 <li class="icon_box">
-                    <img class="icon" src="../img/5.png" alt="">
+                    <svg class="icon">
+                        <use xlink:href="./img/icons/sprite.svg#open-book"></use>
+                    </svg>
                     <div class="text_box">
                         <span class="icon_sign">digital</span>
                         <p class="icon_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -85,7 +109,10 @@
                 <ul class="list">
                     <li class="list_item">
                         <div class="image_wrapper">
-                            <img class="team_image" src="../img/1.jpg" alt="">
+                            <picture class="team_image">
+                                <source srcset="./img/1-min.jpg, ./img/1x2-min.jpg 2x">
+                                    <img src="./img/1-min.jpg" alt="">
+                            </picture>
                             <div class="icons_gradient"></div>
                                 <div class="icons">
                                     <button class="icon_sm facebook"></button>
@@ -100,7 +127,10 @@
                     </li>
                     <li class="list_item">
                         <div class="image_wrapper">
-                            <img class="team_image" src="../img/2.jpg" alt="">
+                            <picture class="team_image">
+                                <source srcset="./img/2-min.jpg, ./img/2x2-min.jpg 2x">
+                                    <img src="./img/2-min.jpg" alt="">
+                            </picture>
                             <div class="icons_gradient"></div>
                                 <div class="icons">
                                     <button class="icon_sm facebook"></button>
@@ -115,7 +145,10 @@
                     </li>
                     <li class="list_item">
                         <div class="image_wrapper">
-                            <img class="team_image" src="../img/3.jpg" alt="">
+                            <picture class="team_image">
+                                <source srcset="./img/3-min.jpg, ./img/3x2-min.jpg 2x">
+                                    <img src="./img/3-min.jpg" alt="">
+                            </picture>
                             <div class="icons_gradient"></div>
                                 <div class="icons">
                                     <button class="icon_sm facebook"></button>
@@ -142,4 +175,5 @@
 </body>
 </html>
 
-
+</body>
+</html>
