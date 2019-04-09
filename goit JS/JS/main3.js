@@ -202,143 +202,20 @@
 // console.log(checkForSpam());
 
 // task 13
-let num;
-function getPx(str){
-    if (typeof str === "string") {
-        parseInt(str)
-    }
-}
 
-console.log( getPx("10px") === 10 ); // true
-console.log( getPx("10.5") === 10.5 ); // true
-console.log( getPx("0") === 0 ); // true
-console.log( getPx(-1) ); // null
-console.log( getPx(10) ); // null
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let num;
+// function getPx(str){
+//     if (typeof str !== "string") {
+//         return null
+//     } else {
+//         return parseFloat(str)
+//     }
+// }
+// console.log( getPx("10px") === 10 ); // true
+// console.log( getPx("10.5") === 10.5 ); // true
+// console.log( getPx("0") === 0 ); // true
+// console.log( getPx(-1) ); // null
+// console.log( getPx(10) ); // null
+
+// task 14
 

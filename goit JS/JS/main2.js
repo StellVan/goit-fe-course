@@ -317,8 +317,18 @@
 // task 15
 
 // const message = "May the force be with you";
+// let a = 0;
 // let longestWord;
-// let text = message.split(" ");  
+// let text = message.split(" ");
+
+// for (let i = 0; i < text.length; i++) {
+//     if (a < text[i].length) {
+//         a = text[i].length;
+//         longestWord = text[i]
+//     }
+// }
+// console.log(`${longestWord} - ${a} letters`);
+
 
 // task 16
 
