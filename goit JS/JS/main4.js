@@ -222,18 +222,22 @@
 // Вызовы функции для проверки
 
 
+// function countTotalSalary(salaries) {
+//   return Object.values(salaries).reduce((acc, el) => acc += el, 0)
+// }
 
-console.log(
-    countTotalSalary({})
-  ); // 0
+
+// console.log(
+//     countTotalSalary({})
+//   ); // 0
   
-  console.log(
-    countTotalSalary({
-      mango: 100,
-      poly: 150,
-      alfred: 80
-    })
-  ); // 330
+//   console.log(
+//     countTotalSalary({
+//       mango: 100,
+//       poly: 150,
+//       alfred: 80
+//     })
+//   ); // 330
   
   
 //   //====================== task14 ==================
@@ -251,6 +255,10 @@ console.log(
 //     { name: 'Ajax', age: 3, mood: 'tired' }
 //   ];
   
+//   function getAllPropValues(arr, prop) {
+//     return arr.map(el => el[prop]);
+//   }
+
 //   // Вызовы функции для проверки
 //   console.log(
 //     getAllPropValues(users, 'name')
@@ -276,13 +284,13 @@ console.log(
 //     discount: 0.1,
 //     orders: ["order-1", "order-2", "order-3"],
 //     changeDiscount(value) {
-//       discount = value;
+//       this.discount = value;
 //     },
 //     getOrders() {
-//       return orders;
+//       return this.orders;
 //     },
 //     addOrder(cost, order) {
-//       balance -= cost;
+//       this.balance -= cost;
 //       orders.push(order);
 //     }
 //   };
@@ -299,19 +307,75 @@ console.log(
 
 
 
+// const products = {
+//   bread: 10,
+//   milk: 15,
+//   apples: 20,
+//   chicken: 50,
+//   cheese: 40,
+// };
 
+//   function Cashier(name, productDatabase, customerMoney) {
+//   this.name = name;
+//   this.productDatabase = productDatabase;
+//   this.customerMoney = 0;
 
+//   this.setCustomerMoney = function(value) {
+//     this.customerMoney += value
+//   }
+//   this.countTotalPrice = function(order) {
+//     return Object.keys(order).reduce((acc, el) => acc += order[el] * products[el], 0);
+//   }
+//   this.countChange = function(totalPrice) {
+//     if (this.customerMoney >= totalPrice) {
+//       return this.customerMoney - totalPrice
+//     } else {
+//       return null
+//     }
+//   }
+//   this.onSuccess = function(change) {
+//     return console.log(`Спасибо за покупку, ваша сдача ${change}!`);
+//   }
+//   this.onError = function() {
+//     return console.log('Очень жаль, вам не хватает денег на покупки');
+//   }
+//   this.reset = function() {
+//     this.customerMoney = 0;
+//   }
+// }
 
+// const mango = new Cashier('Mango', products);
 
+// const order = {
+//   bread: 2,
+//   milk: 2,
+//   apples: 1,
+//   cheese: 1
+// };
 
+// console.log(mango.name); // Mango
+// console.log(mango.productDatabase); // ссылка на базу данных продуктов (объект products)
+// console.log(mango.customerMoney); // 0
 
+// const totalPrice = mango.countTotalPrice(order);
+// console.log(totalPrice);
 
+// mango.setCustomerMoney(300);
+// console.log(mango.customerMoney); // 300
 
+// const change = mango.countChange(110);
+// console.log(change); // 190
 
+// if(change !== null) {
+//   // При успешном обслуживании вызываем метод onSuccess
+//  mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
+// } else {
+//  // При неудачном обслуживании вызываем метод onError   
+//  mango.onError(); // Очень жаль, вам не хватает денег на покупки
+// }
 
-
-
-
+// mango.reset();
+// console.log(mango.customerMoney); // 0
 
 
 

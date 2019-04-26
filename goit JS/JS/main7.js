@@ -263,23 +263,24 @@
 
 // createCards(posts)
 
-let root = document.querySelector('#root')
-let box = document.createElement('div')
+// let root = document.querySelector('#root')
+// let box = document.createElement('div')
 
-function RNGcolor() {
-    let red = Math.floor(Math.random()*255)
-    return red
-}
+// function RNGcolor() {
+//     let red = Math.floor(Math.random()*255)
+//     return red
+// }
 
-function createBoxes(num) {
-    let i = 0;
-    let w = 30;
-    while (i < num) {
-        i++
-    root.append(box)
-    box.innerHTML += `<div style = "width: ${w + 'px'}; height: ${w + 'px'}; background: rgb(${RNGcolor()},${RNGcolor()},${RNGcolor()})"></div>`
-    w +=10
-    }
-}
-createBoxes(10)
-console.log(box);
+// function createBoxes(num) {
+//     let i = 0;
+//     let w = 30;
+//     while (i < num) {
+//         i++
+//     root.append(box)
+//     box.innerHTML += `<div style = "width: ${w + 'px'}; height: ${w + 'px'}; background: rgb(${RNGcolor()},${RNGcolor()},${RNGcolor()})"></div>`
+//     w +=10
+//     }
+// }
+// createBoxes(10)
+// console.log(box);
+

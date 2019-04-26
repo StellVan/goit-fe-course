@@ -376,7 +376,7 @@
 // */
 
 // function getTotal(order) {
-//     let a = Object.values(order)
+    // let a = Object.values(order)
 //     const total = a.reduce((acc, el) => acc + el, 0)
 //     return total
 // }
