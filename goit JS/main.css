@@ -606,7 +606,7 @@ body {
   color: #ffffff;
 } */
 
-/* body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,7 +647,6 @@ body {
 
 body {
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -770,13 +769,12 @@ body {
 
 .posts {
   display: flex;
-  max-width: 1170px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .post {
-  position: relative;
   flex: 0 0 calc(25% - 16px);
   margin: 8px;
   padding: 16px;
@@ -785,15 +783,35 @@ body {
 }
 
 .fav-icon {
-  position: absolute;
   top: 4px;
   right: 4px;
   display: inline-block;
   width: 32px;
   height: 32px;
   background-image: url("https://image.flaticon.com/icons/svg/189/189670.svg");
-} */
+}
 
+.box {
+  text-align: left;
+}
+.box li {
+  list-style-type: none;
+}
+.stopwatch {
+  margin-left: 0;
+}
+.listitem {
+  font-family: "Roboto", sans-serif;
+  padding: 10px 40px;
+  border-radius: 5%;
+  border: solid black 3px;
+}
+.qwerty {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
 /* 
 
 body {
@@ -832,4 +850,4 @@ form {
 
 
 
- */
+
