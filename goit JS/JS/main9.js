@@ -90,8 +90,6 @@ function getFormattedTime(time) {
 
 
 
-
-
 const time = document.querySelector(".time");
 const startBtn = document.querySelector(".js-start");
 const resetBtn = document.querySelector(".js-reset");
@@ -168,6 +166,7 @@ resetBtn.addEventListener('click', () => {
     resetBtn.classList.add("active")
     resetBtn.textContent = `reset`
 })
+
 
 
 
