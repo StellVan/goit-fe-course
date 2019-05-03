@@ -57,34 +57,36 @@ function getFormattedTime(time) {
 //     getFormattedTime(1523621244239)
 //   ); // 07:24.2
 
-function timer1() {
-    const clockface = document.querySelector(".js-clockface");
-    const startBtn = document.querySelector(".js-timer-start");
-    const stopBtn = document.querySelector(".js-timer-stop");
-    let interval
+
+
+// function timer1() {
+//     const clockface = document.querySelector(".js-clockface");
+//     const startBtn = document.querySelector(".js-timer-start");
+//     const stopBtn = document.querySelector(".js-timer-stop");
+//     let interval
     
-    startBtn.addEventListener('click', () => {
-        startBtn.disabled = true
-        startBtn.classList.add("active")
-        stopBtn.classList.remove("active")
+//     startBtn.addEventListener('click', () => {
+//         startBtn.disabled = true
+//         startBtn.classList.add("active")
+//         stopBtn.classList.remove("active")
     
-        let dateNow = Date.now()
-        interval = setInterval(() => {
-            let dateStart = new Date(new Date() - dateNow) 
-            let int = dateStart.getTime()
-            clockface.innerHTML = getFormattedTime(int)
-        }, 100)
-    })
+//         let dateNow = Date.now()
+//         interval = setInterval(() => {
+//             let dateStart = new Date(new Date() - dateNow) 
+//             let int = dateStart.getTime()
+//             clockface.innerHTML = getFormattedTime(int)
+//         }, 100)
+//     })
     
-    stopBtn.addEventListener('click', () => {
-        startBtn.disabled = false
-        startBtn.classList.remove('active')
-        stopBtn.classList.add("active")
+//     stopBtn.addEventListener('click', () => {
+//         startBtn.disabled = false
+//         startBtn.classList.remove('active')
+//         stopBtn.classList.add("active")
     
-        clearInterval(interval)
-    }) 
-}
-timer1()
+//         clearInterval(interval)
+//     }) 
+// }
+// timer1()
 
 
 
@@ -96,25 +98,73 @@ const time = document.querySelector(".time");
 const startBtn = document.querySelector(".js-start");
 const resetBtn = document.querySelector(".js-reset");
 const lapBtn = document.querySelector(".js-take-lap");
-let interval 
+let interval
+let pauseCounter
+let clickCount = 1
+let i
+let k
+let dateNow
+let datePause
+
 startBtn.addEventListener('click', () => {
-    startBtn.disabled = true
     startBtn.classList.add("active")
     resetBtn.classList.remove("active")
-
-    let dateNow = Date.now()
+    
+const timer = dateNow => {
     interval = setInterval(() => {
         let dateStart = new Date(new Date() - dateNow) 
-        let int = dateStart.getTime()
-        time.innerHTML = getFormattedTime(int)
+        i = dateStart.getTime()
+        time.innerHTML = getFormattedTime(i)  
     }, 100)
+    
+}
+const pause = () => {
+    datePause = Date.now()
+     pauseCounter = setInterval(() => {
+         let dateStart = new Date(new Date() - datePause) 
+         k = dateStart.getTime()
+         console.log(k);
+     }, 100) 
+}
+
+    if (clickCount === 1) {
+        clickCount++
+        startBtn.textContent = 'Pause'
+        dateNow = Date.now()
+        timer(dateNow)
+    
+    } else if (clickCount === 2) {
+        clickCount++
+        pause()
+        clearInterval(interval)
+        startBtn.textContent = 'Continue'
+        console.log('2');
+
+    } else if (clickCount === 3) {
+        dateNow += k
+        timer(dateNow)
+        clearInterval(pauseCounter)
+        clickCount = 2
+        startBtn.textContent = 'Pause'
+        console.log('3');
+    }
+
+
 })
 
+// startBtn.addEventListener('click', () => {
+//     clickCount++
+// })
+
 resetBtn.addEventListener('click', () => {
+    clickCount = 0
     startBtn.disabled = false
     startBtn.classList.remove('active')
     resetBtn.classList.add("active")
 
+    startBtn.textContent = 'Start'
+    clickCount = 1
+    clearInterval(pauseCounter)
     clearInterval(interval)
 })
 

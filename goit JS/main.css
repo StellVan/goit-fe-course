@@ -606,7 +606,7 @@ body {
   color: #ffffff;
 } */
 
-/* body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,9 +792,9 @@ body {
   width: 32px;
   height: 32px;
   background-image: url("https://image.flaticon.com/icons/svg/189/189670.svg");
-} */
+}
 
-/* 
+
 
 body {
   padding: 20px;
@@ -828,8 +828,3 @@ form {
 .results .error {
   color: #f44336;
 }
-
-
-
-
- */
