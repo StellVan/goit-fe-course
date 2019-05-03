@@ -192,3 +192,62 @@
 
 // menu.addEventListener('click', click)
 
+
+
+const galleryItems = [
+    { preview: 'images/one.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/three.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/for.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/five.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/five.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+    { preview: 'images/two.jpg', fullview: 'img/fullview-1.jpeg', alt: "alt text 1"},
+  ];
+
+const previewLi = document.querySelectorAll(".preview img")
+const preview = document.querySelector(".preview")
+const fullview = document.querySelector(".fullview")
+const arrowL = document.querySelector(".arrowL")
+const arrowR = document.querySelector(".arrowR")
+let i
+let bigImg
+function aaa(mass) {
+    fullview.innerHTML = `<img class="bigImg" src="${mass[0].preview}" width="800" height="500" alt="${mass[0].alt}1">`
+    for (i = 0; i < mass.length; i++) {
+        preview.innerHTML += `<li><img src="${mass[i].preview}" width="200" height="120" data-fullview="${mass[i].fullview}" alt="${mass[i].alt} data-index-number="${i}"></li>`
+    }
+
+    preview.addEventListener('mousedown', (event) => {
+        bigImg = document.querySelector(".bigImg")
+        if (event.target != preview) {
+            bigImg.setAttribute("src", event.target.src)
+            console.log(event.target.classList.ge);
+        }
+    })
+    
+    preview.addEventListener('mouseup', (event) => {
+        if (event.target != preview) {
+            event.target.classList.remove("active")
+            console.log(mass.indexOf(event.target));
+        }
+    })
+    arrowL.addEventListener('mousedown', () => {
+        arrowL.classList.add("activeB")
+    })
+    arrowL.addEventListener('mouseup', () => {
+        arrowL.classList.remove("activeB")
+    })
+    arrowR.addEventListener('mousedown', () => {
+        arrowR.classList.add("activeB")
+    })
+    arrowR.addEventListener('mouseup', () => {
+        arrowR.classList.remove("activeB")
+    })
+}
+
+aaa(galleryItems)

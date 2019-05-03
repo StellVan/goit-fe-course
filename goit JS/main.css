@@ -647,7 +647,6 @@ body {
 
 body {
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -770,13 +769,12 @@ body {
 
 .posts {
   display: flex;
-  max-width: 1170px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .post {
-  position: relative;
   flex: 0 0 calc(25% - 16px);
   margin: 8px;
   padding: 16px;
@@ -785,7 +783,6 @@ body {
 }
 
 .fav-icon {
-  position: absolute;
   top: 4px;
   right: 4px;
   display: inline-block;
@@ -794,9 +791,32 @@ body {
   background-image: url("https://image.flaticon.com/icons/svg/189/189670.svg");
 }
 
+<<<<<<< HEAD
+=======
+.box {
+  text-align: left;
+}
+.box li {
+  list-style-type: none;
+}
+.stopwatch {
+  margin-left: 0;
+}
+.listitem {
+  font-family: "Roboto", sans-serif;
+  padding: 10px 40px;
+  border-radius: 5%;
+  border: solid black 3px;
+}
+.qwerty {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+} */
+>>>>>>> a713b578eb2747388735b5aaa6f435b2103212a3
 
 
-body {
+/* body {
   padding: 20px;
   font-family: Roboto, sans-serif;
 }
@@ -827,4 +847,64 @@ form {
 
 .results .error {
   color: #f44336;
+<<<<<<< HEAD
+=======
+} */
+
+.image-gallery{
+  width: 1200px;
+  margin: 0 auto;
+}
+.ulBox{
+  width: 1000px;
+  margin: 0 auto;
+}
+.fullview {
+  width: 800px;
+  padding: 20px 30px;
+  border: solid rgba(0, 0, 0, 0.233) 1px;
+}
+.bigImg {
+  background-size: contain;
+  width: 800px;
+}
+.preview {
+  /* overflow: hidden; */
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+
+.preview li {
+  font-size: 0;
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+.preview img {
+  border: solid rgba(0, 0, 0, 0.233) 1px;
+  background-color: rgba(122, 8, 8, 0.336);
+  padding: 10px;
+  counter-increment: 0;
+}
+.active {
+  background-color: #2196F3;
+}
+.activeB {
+  filter: brightness(10)
+}
+body {
+  background-color: black;
+}
+.arrow {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: auto 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+>>>>>>> a713b578eb2747388735b5aaa6f435b2103212a3
 }
